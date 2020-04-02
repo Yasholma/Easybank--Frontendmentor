@@ -106,6 +106,7 @@ p {
 .heading h2 {
   font-weight: 300;
   font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 .heading p {
@@ -185,8 +186,9 @@ p {
   height: 30rem;
   background: url("../images/bg-intro-desktop.svg");
   background-size: 50rem;
-  background-position: top 50% right -40%;
+  background-position: top -70% right -40%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -261,3 +263,66 @@ p {
   font-size: 0.8rem;
   line-height: 1.5;
 }
+/* Services Styling End */
+
+/* -------------------------------------------------------
+========== Blog Styling ====
+---------------------------------------------------------- */
+
+.articles {
+  display: flex;
+}
+
+.article {
+  max-width: 25%;
+  margin-right: 2rem;
+  background: var(--white-color);
+}
+
+.article-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.25em 0.25em 0 0;
+}
+
+.article-img img:first-child {
+  height: 200px;
+  width: 100%;
+}
+
+.article-description {
+  margin-top: auto;
+  padding: 1.5rem;
+}
+
+.article-description h6,
+.article-description p {
+  color: var(--light-color);
+}
+
+.article-description h6 {
+  font-weight: 400;
+  margin: 1em 0;
+}
+
+.article-description a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  transition: color 0.3s linear;
+}
+
+.article-description a:hover {
+  color: var(--primary-color);
+}
+
+.article-description p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* BLog Styling End */
