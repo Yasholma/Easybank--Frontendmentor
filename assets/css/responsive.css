@@ -1,0 +1,248 @@
+/* Media Queries */
+@media screen and (min-width: 48rem) {
+  .btn {
+    padding: 0.64rem 1.8rem;
+    font-size: 0.7rem;
+  }
+
+  /* Navigation */
+  .mobile-nav {
+    display: none;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .nav-lists {
+    display: flex;
+    list-style: none;
+    align-items: stretch;
+    justify-content: space-evenly;
+  }
+
+  .nav-lists .nav-item {
+    margin-right: 2em;
+  }
+
+  .nav-lists a {
+    color: var(--light-color);
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: border 0.3s ease;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  .nav-item.active a,
+  .nav-lists a:hover {
+    color: var(--text-color);
+    border-bottom: 3px solid var(--primary-color);
+  }
+
+  /* Services Section */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .service:not(:nth-child(2n)) {
+    border-right: 2px solid var(--white-color);
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Blog Section */
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  /* Footer Section */
+  footer {
+    padding: 3em 0;
+    height: 220px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-between;
+  }
+
+  .content-1 .logo {
+    margin-bottom: 2rem;
+  }
+
+  .social {
+    margin-right: 0.3rem;
+  }
+
+  .footer-nav-links {
+    text-align: left;
+  }
+
+  .content-4 {
+    text-align: right;
+  }
+
+  .content-4 .btn {
+    margin: 0 auto 1.5rem;
+  }
+
+  .attribution a {
+    padding: 1.5em auto 0;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .container {
+    width: 80%;
+  }
+
+  /* Home Section */
+  #home {
+    width: 100%;
+    height: auto;
+    background-color: var(--light-color);
+    background: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top -35px right -178px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #home .content-box {
+    padding: 0;
+  }
+
+  .home-content {
+    flex-direction: row;
+  }
+
+  #home .container {
+    width: 65%;
+  }
+
+  .home-text {
+    order: 0;
+    text-align: left;
+    width: 50rem;
+    margin: 0;
+  }
+
+  .home-text h1 {
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .home-text p {
+    color: var(--light-color);
+    font-size: 0.96rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .home-bg img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    width: 100%;
+    margin-top: -30px;
+    margin-right: -220px;
+    position: relative;
+    top: 0px;
+    right: 105px;
+  }
+
+  /* Services Section */
+  #service {
+    margin-top: -70px;
+  }
+
+  .services {
+    text-align: left;
+  }
+
+  .service-img img {
+    display: inline-block;
+  }
+
+  .service-content .heading h2 {
+    text-align: left;
+    font-size: 2.2rem;
+  }
+
+  .service-content .heading p {
+    text-align: left;
+    width: 36rem;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+  }
+
+  .service:not(:last-child) {
+    border-right: 2px solid var(--white-color);
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Articles Sections */
+  .articles {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .article-description {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .container {
+    width: 80%;
+  }
+
+  #home {
+    background-position: top -78px right -210px;
+  }
+
+  #home .container {
+    width: 65%;
+  }
+
+  .home-text {
+    order: 0;
+    text-align: left;
+    width: 50rem;
+    margin: 0;
+  }
+
+  .home-bg img {
+    top: 0px;
+    right: 22px;
+  }
+
+  #service {
+    margin-top: -125px;
+  }
+}
